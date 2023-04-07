@@ -36,6 +36,9 @@ The Taluka Panchayat Website will bring numerous benefits to citizens, governmen
 
 ![App Screenshot](https://i.ibb.co/bL0WHCb/Screenshot-113.png)
 
+Username: admin@taluka.com
+Password: 123
+
 https://jaydipsinh-talukapanchayat.netlify.app
 ## Tech Stack
 
