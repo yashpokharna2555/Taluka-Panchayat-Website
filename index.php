@@ -35,6 +35,14 @@ require 'dbcon.php';
         width: 100%;
       }
     }
+
+    .error-message {
+      color: red;
+      font-size: 0.875rem;
+      margin-top: 0.25rem;
+      display: block;
+    }
+
     </style>
    
 </head>
@@ -365,39 +373,37 @@ require 'dbcon.php';
       </section>
 
      <!-- CONTACT -->
-      <section class="contact" id="contact">
-        <div class="container">
+     <section class="contact" id="contact">
+  <div class="container">
 
-          <h2 class="h2 section-title">Contact Us</h2>
+    <h2 class="h2 section-title">Contact Us</h2>
 
-            <div class="contact-wrapper">
-            <form action="" class="contact-form">
+          <div class="contact-wrapper">
+            <form action="" class="contact-form" id="contactForm">
               <div class="wrapper-flex">
+
                 <div class="input-wrapper">
                   <label for="name">Name*</label>
-
                   <input type="text" name="name" id="name" required placeholder="Enter Your Name" class="input-field">
+                  <span class="error-message" id="nameError"></span>
                 </div>
 
                 <div class="input-wrapper">
-                  <label for="emai">Email*</label>
-
-                  <input type="text" name="email" id="email" required placeholder="Enter Your Email"
-                    class="input-field">
+                  <label for="email">Email*</label>
+                  <input type="email" name="email" id="email" required placeholder="Enter Your Email" class="input-field">
+                  <span class="error-message" id="emailError"></span>
                 </div>
 
               </div>
 
               <label for="message">Message*</label>
-              <textarea name="message" id="message" required placeholder="Type Your Message"
-                class="input-field"></textarea>
+              <textarea name="message" id="message" required placeholder="Type Your Message" class="input-field"></textarea>
+              <span class="error-message" id="messageError"></span>
 
               <button type="submit" class="btn btn-primary">
                 <span>Send Message</span>
-
                 <ion-icon name="paper-plane-outline"></ion-icon>
               </button>
-
             </form>
 
             <ul class="contact-list">
